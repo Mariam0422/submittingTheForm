@@ -1,3 +1,35 @@
 li {
   list-style-type: none;
 }
+body {
+  background-color: #110d27;
+  font-family: sans-serif;
+}
+.root .main {
+  background-color: white;
+  width: 55%;
+  margin: 150px auto;
+  padding: 10px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.root .main .text {
+  margin-left: 20px;
+  width: 400px;
+}
+.root .main .text h1 {
+  font-size: 45px;
+}
+.root .main .text p i {
+  color: red;
+  margin-right: 5px;
+}
+.root .main .text .email label p {
+  margin-top: 30px;
+}
+.root .main .image img {
+  width: 320px;
+  border-radius: 10px;
+}
