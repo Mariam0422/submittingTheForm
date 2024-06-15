@@ -9,7 +9,7 @@ body {
   background-color: white;
   width: 55%;
   margin: 150px auto;
-  padding: 10px ;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
 }
 .root .main .text {
   margin-left: 20px;
-  width: 400px;
+  width: 60%;
 }
 .root .main .text h1 {
   font-size: 45px;
@@ -26,10 +26,61 @@ body {
   color: red;
   margin-right: 5px;
 }
-.root .main .text .email label p {
-  margin-top: 30px;
+.root .main .text .email label #address {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.root .main .text .email label #validEmail {
+  display: none;
+  margin-right: 35px;
+  color: red;
+}
+.root .main .text .email label input {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.root .main .text button {
+  margin-top: 15px;
+  width: 90%;
+  color: white;
+  background-color: #110d27;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #110d27;
+}
+.root .main .text button:hover {
+  background-color: #030311;
+  box-shadow: 2px 3px 4px grey;
+}
+.root .main .image {
+  width: 50%;
 }
 .root .main .image img {
-  width: 320px;
+  width: 100%;
   border-radius: 10px;
+}
+.root .resolve {
+  display: none;
+  margin: 150px auto;
+  background-color: white;
+  width: 30%;
+  padding: 25px;
+  border-radius: 20px;
+}
+.root .resolve .successText .fa {
+  font-size: 50px;
+  color: red;
+}
+.root .resolve .successText h1 {
+  font-size: 30px;
+}
+.root .resolve .successText button {
+  width: 95%;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: #110d27;
 }

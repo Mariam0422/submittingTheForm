@@ -1,46 +1,96 @@
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-body{
-    background-color: rgb(17, 13, 39);
-    font-family: sans-serif;
+body {
+  background-color: rgb(17, 13, 39);
+  font-family: sans-serif;
 }
-.root{
-   
-    .main{
-        background-color: white;
-        width: 55%;
-        margin: 150px auto;
-        padding: 10px ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        .text{
-            margin-left: 20px;
-            width: 400px;
-            h1{
-                font-size: 45px;
-            }
-            p{
-                i{
-                    color: red;
-                    margin-right: 5px;
-                }
-            }
-            .email{
-                label{
-                    p{
-                        margin-top: 30px;
-                    }
-                }                
-            }
+.root {
+  .main {
+    background-color: white;
+    width: 55%;
+    margin: 150px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    .text {
+      margin-left: 20px;
+      width: 60%;
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        i {
+          color: red;
+          margin-right: 5px;
         }
-        .image{
-            img{
-                width:320px;
-                border-radius: 10px;
+      }
+      .email {
+        label {
+            #address{
+                display: flex;
+                justify-content: space-between;
+                font-size: 10px;
             }
+            #validEmail{
+                display: none;
+                margin-right: 35px;
+                color: red;
+            }
+          input {
+            width: 90%;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+          }
         }
+      }
+      button{
+          margin-top: 15px;
+          width: 90%;
+          color: white;
+          background-color: rgb(17, 13, 39);
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid rgb(17, 13, 39);
+          &:hover{
+            background-color: rgb(3, 3, 17);
+            box-shadow: 2px 3px 4px grey;
+          }
+      }
     }
+    .image {
+        width: 50%;       
+      img {
+        width: 100%;       
+        border-radius: 10px;
+      }
+    }
+  }
+  .resolve{
+    display: none;
+    margin: 150px auto;
+    background-color: white;
+    width: 30%;
+    padding: 25px;
+    border-radius: 20px;
+    .successText{
+      .fa{
+       font-size: 50px;
+       color: red;
+      }
+      h1{
+        font-size: 30px;
+      }
+      button{
+        width: 95%;    
+        padding: 10px;
+        border-radius: 8px;
+        color: white;
+        background-color: rgb(17, 13, 39);
+      }
+    }
+  }
 }

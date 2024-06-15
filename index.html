@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="root">
-      <div class="main">
+      <div class="main" id="main">
         <div class="text">
           <h1>Stay updated!</h1>
 
@@ -35,14 +35,35 @@
 
           <div class="email">
             <label for="inputEmail">
-              <p>Email address</p>
-              <input  type="email" placeholder="company@email.com" id="inputEmail"/>
+              <div id="address">
+                <p>Email address</p>
+                <p id="validEmail">Valid email required</p>
+              </div>
+              <input
+                type="email"
+                placeholder="company@email.com"
+                id="inputEmail"
+              />
             </label>
           </div>
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button id="button" type="submit">
+            Subscribe to monthly newsletter
+          </button>
         </div>
         <div class="image">
           <img src="./img/photo_2024-06-13_01-13-03.jpg" alt="" />
+        </div>
+      </div>
+      <div class="resolve" id="resolve">
+        <div class="successText">
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+          <h1>Thanks for <br> Subscribing!</h1>
+          <p id="emailAddress">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit
+            quidem sapiente debitis dolore quo, architecto similique tempora
+            eius ducimus.
+          </p>
+          <button>Dismiss message</button>
         </div>
       </div>
     </div>
