@@ -12,6 +12,7 @@ body {
     margin: 150px auto;
     padding: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -91,6 +92,19 @@ body {
         color: white;
         background-color: rgb(17, 13, 39);
       }
+    }
+  }
+}
+@media(max-width: 720px){
+  #main{
+    flex-direction: column;
+    .image{
+      order: -1;
+      width: 90%;
+    }
+    .text{
+      order: 1;
+      width: 90%;
     }
   }
 }

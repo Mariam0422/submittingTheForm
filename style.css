@@ -11,6 +11,7 @@ body {
   margin: 150px auto;
   padding: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
@@ -83,4 +84,17 @@ body {
   border-radius: 8px;
   color: white;
   background-color: #110d27;
+}
+@media (max-width: 720px) {
+  #main {
+    flex-direction: column;
+  }
+  #main .image {
+    order: -1;
+    width: 90%;
+  }
+  #main .text {
+    order: 1;
+    width: 90%;
+  }
 }
